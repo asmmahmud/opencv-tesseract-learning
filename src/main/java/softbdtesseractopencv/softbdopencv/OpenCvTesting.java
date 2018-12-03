@@ -1,26 +1,24 @@
 package softbdtesseractopencv.softbdopencv;
 
-import net.sourceforge.tess4j.TesseractException;
 import org.opencv.core.*;
 import org.opencv.core.Point;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
-
 import softbdtesseractopencv.softbdtesseract.TxtDetect;
 
 import java.awt.*;
 import java.io.File;
-
 import java.io.PrintWriter;
 import java.util.*;
 import java.util.List;
 
 import static org.opencv.core.Core.addWeighted;
-//import static org.opencv.core.Core.meanStdDev;
 import static org.opencv.highgui.HighGui.*;
 import static org.opencv.highgui.ImageWindow.WINDOW_AUTOSIZE;
 import static org.opencv.imgcodecs.Imgcodecs.*;
 import static org.opencv.imgproc.Imgproc.*;
+
+//import static org.opencv.core.Core.meanStdDev;
 
 public class OpenCvTesting {
     static {
@@ -35,9 +33,9 @@ public class OpenCvTesting {
     }
     
     private void testTesseract() {
-        
-        Mat sourceImg = imread("resources/input/tabular_data1.png");
-        File tabularImg = new File("resources/input/tabular_data1.png");
+
+        Mat sourceImg = imread("resources/input/wpDataTables-Output.png");
+        File tabularImg = new File("resources/input/wpDataTables-Output.png");
 
 //      File bangTxtImg = new File("resources/input/bangla-txt-img.jpg");
 //      File nIDImg = new File("resources/input/national-id-card1.jpg");
